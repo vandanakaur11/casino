@@ -1,0 +1,237 @@
+.settingsComponent {
+  min-height: calc(100vh - 74px);
+  width: 100%;
+}
+
+.settingsComponentForm {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.settingsComponentFormMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.settingsComponentFormMainInput {
+  flex: 0.48;
+  margin: 20px 0;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsComponentFormMainInput label {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.settingsComponentFormMainInput input {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.settingsComponent .settingsComponentBtn,
+.settingsComponent .settingsComponentBtn:hover {
+  display: block;
+  max-width: 500px;
+  width: 80%;
+  min-width: max-content;
+  margin: 50px auto;
+  padding: 10px;
+  text-transform: capitalize;
+  background: #007aff;
+  font-size: 16px;
+  color: #fff;
+}
+
+.settingsComponentContent {
+  margin: 30px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.settingsComponentContent > h2 {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.settingsComponentContent > p {
+  color: lightgray;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settingsComponentContent > p::before {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  width: 200px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.settingsComponentContentMain {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px auto;
+}
+
+.settingsComponent .generalSwitchs {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px 20px;
+}
+
+.settingsComponent .generalSwitchs > p {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.settingsComponent .prefrenceSwitchs {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settingsComponent .prefrenceSwitchs .Switch {
+  max-width: 500px;
+  width: 50%;
+}
+
+.settingsComponent .Switch {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.settingsComponent .Switch h3 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.settingsComponent .SwitchSpan {
+  margin: 0 10px;
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+  flex: 1;
+}
+
+.settingsComponentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsComponentHeader h2 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.settingsComponentPara {
+  margin: 20px 0;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+.settingsComponent .depostiHeader {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.settingsComponent .depostiHeader .autocomplete {
+  background: white;
+  transition: 0.3s ease !important;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.settingsComponent .depostiHeader h3 {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.settingsComponent > .verifyPara {
+  margin: 50px 0;
+  max-width: 600px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.settingsComponentVerifyBox {
+  padding: 50px;
+  border: 2px dashed #223744;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settingsComponentVerifyBox img {
+  max-width: 125px;
+  width: 50%;
+  min-width: 75px;
+  object-fit: contain;
+  margin-bottom: 50px;
+}
+
+.settingsComponentVerifyBox p {
+  max-width: 400px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .prefrenceSwitchs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prefrenceSwitchs .Switch {
+    min-width: 100% !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .settingsComponentFormMain {
+    flex-direction: column;
+  }
+  .settingsComponentContentMain {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .settingsComponent {
+    min-height: calc(100vh - 64px);
+  }
+}

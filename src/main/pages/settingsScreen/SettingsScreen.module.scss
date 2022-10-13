@@ -1,0 +1,40 @@
+@import "../../../sass/colors";
+
+.settingsScreeen {
+    max-height: calc(100vh - 74px);
+    width: 100%;
+
+    overflow-y: scroll;
+    padding: 30px;
+
+    .btnGroup {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        // border: 1px solid $light-indigo;
+
+        button {
+            // border: 1px solid $light-indigo;
+            text-transform: capitalize;
+            font-size: 20px;
+            transition: 0.3s ease;
+            padding: 20px 0;
+            flex: 1;
+            color: #fff;
+            min-width: 135px;
+            border-bottom: 5px solid $light-indigo;
+
+            &:hover,
+            &.active {
+                border-bottom: 5px solid $dark-blue;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .settingsScreeen {
+        max-height: calc(100vh - 64px);
+        padding: 10px;
+    }
+}

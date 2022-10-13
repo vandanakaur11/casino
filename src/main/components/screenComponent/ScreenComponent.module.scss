@@ -1,0 +1,37 @@
+@import "../../../sass/colors";
+
+.layoutScreen {
+  background: $dark-indigo;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+
+  .layoutContainer {
+    flex: 1;
+
+    .layoutDiv {
+      display: flex;
+    }
+  }
+
+  .showChat {
+    color: #fff;
+    margin-right: 0;
+    transition: 0.3s;
+  }
+
+  .hideChat {
+    transition: 0.3s;
+    margin-right: -320px;
+  }
+}
+
+@media (max-width: 970px) {
+  .layoutScreen {
+    display: block;
+  }
+  .hideChat,
+  .showChat {
+    display: none;
+  }
+}

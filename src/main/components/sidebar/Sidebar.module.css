@@ -1,0 +1,119 @@
+.sidebar {
+    max-height: calc(100vh);
+    min-width: 250px;
+    background-color: #223744;
+    overflow-y: scroll;
+}
+
+.bannerIconStyle {
+    width: 70px !important;
+    height: 30px;
+    margin-right: -40px;
+}
+.bannerTextStyle {
+    width: 150px !important;
+    height: 50px;
+    margin-left: -40px;
+}
+.svgLogo {
+    width: 250px;
+    height: 60px;
+    margin: 10px 0px;
+}
+
+.sidebar .headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-bottom: 3px solid #0a212f;
+}
+
+.sidebar .headerLogo button {
+    padding: 0;
+    margin: 20px 10px;
+    margin-left: 0;
+}
+
+.sidebar .headerLogo img {
+    width: 45px;
+}
+
+.sidebar .headerLogo h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.sidebar .headerLogo h3 span {
+    color: #007aff;
+}
+
+.sidebarList {
+    padding: 20px 0;
+    color: #fff;
+    border-bottom: 3px solid #0a212f;
+}
+
+.sidebarList .active,
+.sidebarList a:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.sidebarList .span {
+    width: 25px;
+    height: 25px;
+    background: lightgray !important;
+    border-radius: 50%;
+}
+
+.sidebarList h3 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.btnWrapper {
+    /* background-color: coral !important; */
+    margin: 0 auto;
+    width: 100% !important;
+    text-align: center;
+    /* height: 300px; */
+    margin: 25px 0px;
+}
+.btnGroup {
+    width: 100%;
+}
+.btnAction {
+    width: 100%;
+    text-align: center;
+}
+
+.sidebarAuth {
+    width: 100%;
+    /* background-color: coral; */
+    padding: 20px 5%;
+}
+.sidebarAuth div {
+    padding: 5px 0px;
+}
+.innerAuth {
+    display: flex;
+}
+.iconAuth {
+    margin-right: 5%;
+}
+.showOptions {
+    visibility: hidden;
+}
+
+@media (max-width: 450px) {
+    .sidebar {
+        max-height: calc(100vh - 64px);
+        width: 80vw;
+    }
+    .showOptions {
+        visibility: visible;
+    }
+}

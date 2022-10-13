@@ -1,0 +1,35 @@
+.layoutScreen {
+  background: #0a212f;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.layoutScreen .layoutContainer {
+  flex: 1;
+}
+
+.layoutScreen .layoutContainer .layoutDiv {
+  display: flex;
+}
+
+.layoutScreen .showChat {
+  color: #fff;
+  margin-right: 0;
+  transition: 0.3s;
+}
+
+.layoutScreen .hideChat {
+  transition: 0.3s;
+  margin-right: -320px;
+}
+
+@media (max-width: 970px) {
+  .layoutScreen {
+    display: block;
+  }
+  .hideChat,
+  .showChat {
+    display: none;
+  }
+}

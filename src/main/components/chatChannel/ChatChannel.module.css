@@ -1,0 +1,114 @@
+.chat {
+  background: #081923;
+  width: 320px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatHeader {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.chatHeader button {
+  text-transform: capitalize;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.chatHeader button img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chatHeader button .chatHeaderIcon {
+  margin-left: 10px;
+}
+
+.chatHeader button:last-child {
+  font-size: 12px !important;
+}
+
+.chatMessages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  color: #fff;
+}
+
+.chatMessages .chatMessage {
+  padding: 20px 10px;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  font-size: 14px;
+}
+
+.chatMessages .chatMessage img {
+  display: inline-block;
+  width: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: -3px;
+}
+
+.chatMessages .chatMessage h4 {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.chat .chatBottom {
+  padding: 15px;
+  background: #223744;
+}
+
+.chat .chatBottom .messageInput {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.chat .chatBottom .messageInput input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  background: #0f212e;
+  color: #fff;
+}
+
+.chat .chatBottom .messageInput input::placeholder {
+  color: lightgray;
+}
+
+.chat .chatBottom .messageInput button {
+  background: #1f9231;
+  color: #fff;
+  border-radius: 0;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.chat .chatBottom .messageInput ~ p {
+  margin: 10px 0;
+}
+
+.chat .chatBottom .messageInput ~ p span {
+  display: inline-block;
+  width: 10px !important;
+  height: 10px !important;
+  background: #6dd400;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 10px lime;
+}

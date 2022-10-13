@@ -1,0 +1,75 @@
+.main {
+    width: 100%;
+    margin: 10vh 10vw;
+}
+
+.options {
+    display: flex;
+    width: 100%;
+    background-color: #037aff;
+    height: 70px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
+
+.options div {
+    font-size: 20px;
+    color: white;
+}
+
+.options div:hover {
+    cursor: pointer;
+    color: #0a212f;
+    font-weight: bold;
+}
+
+.info {
+    margin-top: 15vh;
+}
+
+.info div {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 60px 0px;
+    font-weight: bold;
+}
+
+.infopara {
+    color: white;
+    font-size: 16px !important;
+    text-align: center;
+    font-weight: normal !important;
+}
+
+.Btn {
+    color: white;
+    font-size: 20px !important;
+    border: 1px solid #037aff;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 30px auto !important;
+    font-weight: normal !important;
+}
+
+.Btn:hover {
+    background-color: #037aff;
+    cursor: pointer;
+}
+
+.trending {
+    /* border: 1px solid #037aff; */
+    width: 80vw;
+    margin: 15vh 0px;
+}
+
+.trending div {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 30px 0px;
+}

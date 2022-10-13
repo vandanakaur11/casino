@@ -1,0 +1,34 @@
+.settingsScreeen {
+  max-height: calc(100vh - 74px);
+  width: 100%;
+  overflow-y: scroll;
+  padding: 30px;
+}
+
+.settingsScreeen .btnGroup {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.settingsScreeen .btnGroup button {
+  text-transform: capitalize;
+  font-size: 20px;
+  transition: 0.3s ease;
+  padding: 20px 0;
+  flex: 1;
+  color: #fff;
+  min-width: 135px;
+  border-bottom: 5px solid #223744;
+}
+
+.settingsScreeen .btnGroup button:hover, .settingsScreeen .btnGroup button.active {
+  border-bottom: 5px solid #007aff;
+}
+
+@media (max-width: 450px) {
+  .settingsScreeen {
+    max-height: calc(100vh - 64px);
+    padding: 10px;
+  }
+}

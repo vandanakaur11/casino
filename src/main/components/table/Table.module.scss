@@ -1,0 +1,108 @@
+@import "../../../sass/colors";
+
+.TableMain {
+  width: 100%;
+  border-top: 1px solid $light-indigo;
+  border-bottom: 1px solid $light-indigo;
+  padding-bottom: 20px;
+  color: #fff;
+
+  table {
+    width: 100%;
+
+    tbody {
+      width: 100%;
+      height: 100%;
+      max-height: 550px;
+      overflow-y: scroll;
+      display: block;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    tr {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      th,
+      td {
+        width: 135px;
+        text-align: center;
+        display: block;
+        font-weight: 400;
+        font-size: 18px;
+        padding: 10px 0;
+
+        button {
+          padding: 5px 0;
+          color: #fff;
+        }
+      }
+
+      th {
+        margin-top: 20px;
+        color: rgb(177, 177, 177);
+      }
+
+      th:nth-child(1),
+      td:nth-child(1) {
+        text-align: left;
+      }
+
+      th:nth-child(2),
+      td:nth-child(2) {
+        width: 145px;
+      }
+
+      th:last-child,
+      td:last-child {
+        text-align: right;
+
+        button {
+          text-transform: capitalize !important;
+          font-size: 16px !important;
+        }
+      }
+
+      .green {
+        color: $green;
+      }
+    }
+  }
+
+  .paginationBtns {
+    margin: 50px 0;
+    border-radius: 5px;
+    overflow: hidden;
+
+    button {
+      padding: 15px;
+      background: $light-indigo;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  table {
+    tr {
+      th,
+      td {
+        display: none !important;
+      }
+      th:nth-child(1),
+      td:nth-child(1),
+      th:last-child,
+      td:last-child {
+        display: block !important;
+        width: max-content !important;
+      }
+    }
+  }
+}

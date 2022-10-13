@@ -1,0 +1,15 @@
+.walletScreen {
+    height: calc(100vh - 74px);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+@media (max-width: 450px) {
+    .walletScreen {
+        height: calc(100vh - 64px);
+        padding: 20px;
+    }
+}

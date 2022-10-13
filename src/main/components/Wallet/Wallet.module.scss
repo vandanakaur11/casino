@@ -1,0 +1,69 @@
+@import "../../../sass/colors";
+
+.wallet {
+    width: 100%;
+    flex: 1;
+    border-bottom: 2px solid $light-indigo;
+
+    h2 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    p,
+    li {
+        color: rgba(255, 255, 255, 0.5);
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    .walletForm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 30px 0;
+
+        .Input {
+            margin: 10px 0;
+            flex: 0.48;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            min-width: 200px;
+
+            input {
+                width: 0;
+                flex: 1;
+                border: none;
+                outline: none;
+                font-size: 16px;
+            }
+        }
+
+        button {
+            margin: 10px 0;
+            flex: 0.48;
+            min-width: 200px;
+            background: $dark-blue;
+            padding: 7px 10px;
+            color: #fff;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .wallet h2 {
+        text-align: center;
+    }
+
+    .walletForm {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,74 @@
+.headingWrap {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    align-items: center;
+    height: 40vh;
+    width: 100vw;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    background-image: url(../../../images/Urgent-game-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* opacity: 0.1; */
+    /* position: relative; */
+    animation: blink 0.8s infinite;
+    /* border: 1px solid white; */
+}
+@keyframes blink {
+    50% {
+        opacity: 0.6;
+    }
+}
+.headingWrap div {
+    /* backdrop-filter: contrast(40%); */
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+.bottomHeading {
+    margin: 0px 10vw;
+    font-size: 40px;
+    color: white;
+    /* border: 1px solid #fff; */
+}
+
+.gamesWrapper {
+    margin: 50px 10vw;
+    /* border: 1px solid #fff; */
+}
+.gamesWrapper:hover {
+    cursor: pointer;
+}
+
+.gamesWrapper img {
+    width: 100%;
+    /* margin: 2vh 0vw; */
+    border-radius: 10px;
+}
+
+.gamesWrapper img:hover {
+    border: 1px solid #fff;
+}
+
+.loadBtn {
+    color: #fff;
+    font-size: 25px;
+    width: 200px;
+    padding: 10px;
+    background-color: #037aff;
+    border-radius: 5px !important;
+    text-align: center;
+    margin: 8vh auto;
+}
+
+.loadBtn:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .headingWrap {
+        height: 20vh;
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../../../sass/colors";
+
+.dashCard {
+    flex: 0.3;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: $light-indigo;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+        width: 100px;
+        object-fit: contain;
+    }
+
+    &Main {
+        h1 {
+            font-size: 44px;
+            font-weight: 500;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+    }
+
+    .green {
+        color: $green;
+    }
+}

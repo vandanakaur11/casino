@@ -1,0 +1,131 @@
+@import "../../../sass/mixins";
+@import "../../../sass/colors";
+
+.home {
+    max-height: calc(100vh - 74px);
+    flex: 1;
+    padding: 30px;
+    color: #fff;
+    overflow-y: scroll;
+
+    &Top {
+        width: 100%;
+        & > h3 {
+            font-weight: 500;
+            margin: 20px 0;
+            font-size: 22px;
+        }
+
+        &Cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    .homeLinks {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .homeLink:nth-child(1) {
+            margin-right: 20px;
+        }
+
+        .homeLink {
+            flex: 1;
+            margin-bottom: 20px;
+
+            h3 {
+                color: #fff;
+                font-weight: 500;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            &Input {
+                display: flex;
+                align-items: center;
+                background: #fff;
+                border-radius: 5px;
+                overflow: hidden;
+
+                input {
+                    width: 0;
+                    flex: 1;
+                    border: none;
+                    outline: none;
+                    padding: 0 20px;
+                    font-size: 18px;
+                    color: #000;
+                }
+
+                button {
+                    color: $dark-blue;
+                    border-radius: 0;
+                    border-left: 1px solid #000;
+                    padding: 10px 20px;
+                }
+            }
+        }
+        .homeLink:nth-child(2) button {
+            color: #fff;
+            background: $dark-blue;
+        }
+    }
+
+    .homeTable {
+        margin: 40px 0;
+
+        &Tabs {
+            button {
+                color: #fff;
+                padding: 5px 0;
+                font-size: 22px;
+                text-transform: capitalize;
+                margin-right: 20px;
+                border-bottom: 5px solid transparent;
+                transition: 0.3s ease;
+            }
+
+            .btnActive {
+                color: $dark-blue;
+                border-bottom: 5px solid;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .homeLinks {
+        flex-direction: column !important;
+
+        .homeLink:nth-child(1) {
+            margin-right: 0 !important;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .homeTopCards {
+        flex-direction: column;
+
+        .dashedCard {
+            flex: 1;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .hideTable {
+        display: none !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .home {
+        max-height: calc(100vh - 64px);
+    }
+}

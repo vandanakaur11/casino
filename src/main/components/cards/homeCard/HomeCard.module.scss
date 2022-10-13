@@ -1,0 +1,58 @@
+@import "../../../sass/mixins";
+@import "../../../sass/colors";
+
+.homeCard {
+    // background: url("https://cdn.zeplin.io/60ce4ef4ada95e14a9dde2f5/assets/8DFF986A-F0C7-4642-8D69-BFB1CE0928AC.png") right no-repeat;
+    // background-size: contain;
+    background-color: $light-indigo !important;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 40px 20px;
+    margin-right: 20px;
+    height: 450px;
+
+    img {
+        width: 75px;
+        object-fit: contain;
+    }
+
+    .homeCardConent {
+        margin-bottom: 20px;
+
+        h4 {
+            color: $light-yellow;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 10px;
+            line-height: 30px;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .homeLeftBoxLeftBtns {
+            button:nth-child(1) {
+                background: $dark-yellow;
+                color: #000;
+                text-transform: capitalize;
+                font-weight: 600;
+                margin-right: 10px;
+            }
+
+            button {
+                color: $dark-yellow;
+            }
+        }
+    }
+}

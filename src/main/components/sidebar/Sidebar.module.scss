@@ -1,0 +1,67 @@
+@import "../../../sass/mixins";
+@import "../../../sass/colors";
+
+.sidebar {
+  max-height: calc(100vh);
+  min-width: 250px;
+  background-color: $light-indigo;
+  overflow-y: scroll;
+
+  .headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-bottom: 3px solid $dark-indigo;
+
+    button {
+      padding: 0;
+      margin: 20px 10px;
+      margin-left: 0;
+    }
+
+    img {
+      width: 45px;
+    }
+
+    h3 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 28px;
+
+      span {
+        color: $dark-blue;
+      }
+    }
+  }
+
+  &List {
+    padding: 20px 0;
+    color: #fff;
+    border-bottom: 3px solid $dark-indigo;
+
+    .active,
+    & a:hover {
+      background: rgba(255, 255, 255, 0.1) !important;
+    }
+    .span {
+      width: 25px;
+      height: 25px;
+      background: lightgray !important;
+      border-radius: 50%;
+    }
+
+    h3 {
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .sidebar {
+    max-height: calc(100vh - 64px);
+  }
+}

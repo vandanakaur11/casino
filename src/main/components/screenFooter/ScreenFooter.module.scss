@@ -1,0 +1,41 @@
+.screenFooter {
+    margin: 20px 0;
+
+    &Images {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        img {
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+        }
+    }
+
+    p {
+        color: #aaa;
+        margin: 40px 0;
+    }
+
+    .screenFooterLinks {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    a {
+        margin-right: 20px;
+        margin-top: 10px;
+        font-size: 18px;
+        transition: 0.3s ease;
+    }
+    a:hover {
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 450px) {
+    .screenFooterLinks {
+        flex-direction: column;
+    }
+}

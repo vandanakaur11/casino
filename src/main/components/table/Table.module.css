@@ -1,0 +1,104 @@
+.TableMain {
+  width: 100%;
+  border-top: 1px solid #223744;
+  border-bottom: 1px solid #223744;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.TableMain table {
+  width: 100%;
+}
+
+.TableMain table tbody {
+  width: 100%;
+  height: 100%;
+  max-height: 550px;
+  overflow-y: scroll;
+  display: block;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.TableMain table tbody::-webkit-scrollbar {
+  display: none;
+}
+
+.TableMain table tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TableMain table tr th,
+.TableMain table tr td {
+  width: 135px;
+  text-align: center;
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.TableMain table tr th button,
+.TableMain table tr td button {
+  padding: 5px 0;
+  color: #fff;
+}
+
+.TableMain table tr th {
+  margin-top: 20px;
+  color: #b1b1b1;
+}
+
+.TableMain table tr th:nth-child(1),
+.TableMain table tr td:nth-child(1) {
+  text-align: left;
+}
+
+.TableMain table tr th:nth-child(2),
+.TableMain table tr td:nth-child(2) {
+  width: 145px;
+}
+
+.TableMain table tr th:last-child,
+.TableMain table tr td:last-child {
+  text-align: right;
+}
+
+.TableMain table tr th:last-child button,
+.TableMain table tr td:last-child button {
+  text-transform: capitalize !important;
+  font-size: 16px !important;
+}
+
+.TableMain table tr .green {
+  color: #6dd400;
+}
+
+.TableMain .paginationBtns {
+  margin: 50px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.TableMain .paginationBtns button {
+  padding: 15px;
+  background: #223744;
+  color: #fff;
+}
+
+@media (max-width: 650px) {
+  table tr th,
+  table tr td {
+    display: none !important;
+  }
+  table tr th:nth-child(1),
+  table tr td:nth-child(1),
+  table tr th:last-child,
+  table tr td:last-child {
+    display: block !important;
+    width: max-content !important;
+  }
+}

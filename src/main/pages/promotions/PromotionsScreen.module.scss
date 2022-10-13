@@ -1,0 +1,141 @@
+@import "../../../sass/colors";
+
+.promotionsScreen {
+  max-height: calc(100vh - 74px);
+  padding: 30px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 2px solid $light-indigo;
+
+  &Main {
+    > h2 {
+      font-size: 2rem;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    > p {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 36px;
+    }
+
+    .PromotionsScreenBox {
+      background: $light-indigo;
+      margin: 50px 0;
+      padding: 30px;
+      border-radius: 4px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &Left {
+        max-width: 650px;
+        min-width: 250px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          font-size: 20px;
+          color: rgba(255, 255, 255, 0.5);
+          line-height: 36px;
+          font-weight: 500;
+        }
+
+        h1 {
+          color: #fff;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+
+        .timerContainer {
+          margin: 20px 0;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          &Box {
+            text-align: center;
+            color: #fff;
+            margin-right: 20px;
+
+            h4 {
+              display: grid;
+              place-items: center;
+              margin: auto;
+              width: 75px;
+              height: 50px;
+              background-color: $dark-indigo;
+              border-radius: 4px;
+              margin-bottom: 10px;
+              font-size: 20px;
+              font-weight: 400;
+            }
+
+            p {
+              color: rgba(255, 255, 255, 0.5);
+              font-size: 18px;
+            }
+          }
+        }
+
+        > p {
+          color: #fff;
+          font-size: 18px;
+          line-height: 30px;
+        }
+
+        button {
+          margin: 20px 0;
+          padding: 10px 30px;
+          margin-right: auto;
+          text-transform: capitalize;
+          font-size: 16px;
+          background: $dark-blue;
+          color: #fff;
+        }
+      }
+      > img {
+        margin: auto;
+        max-width: 350px;
+        width: 80%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 855px) {
+  .PromotionsScreenBox {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 505px) {
+  .PromotionsScreenBoxLeft h1 {
+    font-size: 1.7rem !important;
+  }
+  .timerContainer {
+    justify-content: center !important;
+  }
+}
+@media (max-width: 450px) {
+  .promotionsScreen {
+    max-height: calc(100vh - 64px);
+    padding: 30px 10px;
+  }
+  .PromotionsScreenBoxLeft {
+    min-width: min-content !important;
+  }
+
+  .promotionsScreen h2 {
+    font-size: 1.5rem;
+  }
+  .promotionsScreen p {
+    font-size: 1rem;
+  }
+}
